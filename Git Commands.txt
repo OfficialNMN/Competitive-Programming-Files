@@ -1,0 +1,31 @@
+git conifg --global user.name ""
+git config --global user.email ""
+
+If creating a new repo from scratch on your local system-
+1. cd <foldername>
+2. git init -----> initializes  project with a .git folder
+# touch .gitignore ----> creates a folder in which we can add files to get ignored while uploading to github
+3. git status -----> status of repository
+4. git add . -----> providing a staging area on git for the project files
+5. git commit -m "any message" -----> initial commit
+6. git remote add origin "link of repository"
+## Github might ask for user authentication ##
+7. git push origin master ----> To push the files from local to remote server (same command to push a branch)
+
+If cloning an already created repo/ to upload big files on github-
+1. cd <foldername>
+2. git clone "link of repository" -----> to clone any existing repository
+3. git status -----> status of repository
+4. git add . -----> providing a staging area on git for the project files
+5. git commit -m "any message" -----> initial commit
+## Github might ask for user authentication ##
+6. git push origin master ----> To push the files from local to remote server (same command to push a branch)
+
+Other commands-
+7. git log ----> To view logs
+8. git rm --cached <filename> ----> To remove a file from staging area
+9. git branch <branchname> ----> To create new branch
+10. git checkout <branchname> ----> To switch between branches
+11. git merge <branchname> ----> To merge a branch to current branch 
+12. copy the .git origin command after creating a repo on github
+13. git pull ----> To pull changes from remote server to local 
